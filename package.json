@@ -1,0 +1,24 @@
+{
+    "name": "rma-web-visualtests",
+    "version": "1.0.0",
+    "description": "Visual Regression Test Automation Framework",
+    "author": "Marc Dacanay",
+    "scripts": {
+        "reference:public-desktop": "node backstop.js --reference -p public -v desktop",
+        "test:public-desktop": "node backstop.js --test -p public -v desktop",
+        "approve:public-desktop": "node backstop.js --approve -p public -v desktop",
+        "openReport:public-desktop": "node backstop.js --openReport -p public -v desktop",
+        "reference:public-phone": "node backstop.js --reference -p public -v phone",
+        "test:public-phone": "node backstop.js --test -p public -v phone",
+        "approve:public-phone": "node backstop.js --approve -p public -v phone",
+        "openReport:public-phone": "node backstop.js --openReport -p public -v phone",
+        "reference:public-tablet": "node backstop.js --reference -p public -v tablet",
+        "test:public-tablet": "node backstop.js --test -p public -v tablet",
+        "approve:public-tablet": "node backstop.js --approve -p public -v tablet",
+        "openReport:public-tablet": "node backstop.js --openReport -p public -v tablet"
+    },
+    "dependencies": {
+        "backstopjs": "^3.5.2",
+        "yargs": "^12.0.1"
+    }
+}
