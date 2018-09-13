@@ -1,0 +1,74 @@
+{
+    "id": "web",
+    "viewports": [
+        {
+            "label": "desktop",
+            "width": 1920,
+            "height": 1080
+        }
+    ],
+    "onBeforeScript": "puppet/onBefore.js",
+    "onReadyScript": "puppet/onReady.js",
+    "scenarios": [
+        {
+            "misMatchThreshold": 0.015,
+            "label": "Header",
+            "url": "https://www.ratemyagent.com.au//",
+            "selectors": [
+                ".rmaHeader"
+            ]
+        },
+        {
+            "misMatchThreshold": 0.015,
+            "label": "Header",
+            "url": "https://www.ratemyagent.com.au//",
+            "hideSelectors": [
+                ".rmaHeader"
+            ],
+            "selectors": [
+                "div[class*=heroImage]"
+            ]
+        },
+        {
+            "misMatchThreshold": 0.015,
+            "label": "Footer",
+            "url": "https://www.ratemyagent.com.au//",
+            "hideSelectors": [
+                ".rmaHeader"
+            ],
+            "selectors": [
+                ".rmaFooter"
+            ]
+        },
+        {
+            "misMatchThreshold": 0.015,
+            "label": "Unauthenicated User: Login Modal",
+            "url": "https://www.ratemyagent.com.au//",
+            "clickSelector": "[ng-click=\"login()\"]",
+            "postInteractionWait": 3000,
+            "selectors": [
+                ".rmaLoginModal"
+            ]
+        }
+    ],
+    "paths": {
+        "bitmaps_reference": "projects/web/desktop/bitmaps_reference",
+        "bitmaps_test": "projects/web/desktop/bitmaps_test",
+        "engine_scripts": "engine_scripts",
+        "html_report": "projects/web/desktop/html_report",
+        "ci_report": "projects/web/desktop/ci_report"
+    },
+    "report": [
+        "browser"
+    ],
+    "engine": "puppeteer",
+    "engineOptions": {
+        "args": [
+            "--no-sandbox"
+        ]
+    },
+    "asyncCaptureLimit": 5,
+    "asyncCompareLimit": 10,
+    "debug": false,
+    "debugWindow": false
+}

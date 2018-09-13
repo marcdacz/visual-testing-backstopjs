@@ -1,24 +1,24 @@
 {
-    "name": "rma-web-visualtests",
+    "name": "visual-testing-backstopjs",
     "version": "1.0.0",
     "description": "Visual Regression Test Automation Framework",
     "author": "Marc Dacanay",
     "scripts": {
-        "reference:public-desktop": "node backstop.js --reference -p public -v desktop",
-        "test:public-desktop": "node backstop.js --test -p public -v desktop",
-        "approve:public-desktop": "node backstop.js --approve -p public -v desktop",
-        "openReport:public-desktop": "node backstop.js --openReport -p public -v desktop",
-        "reference:public-phone": "node backstop.js --reference -p public -v phone",
-        "test:public-phone": "node backstop.js --test -p public -v phone",
-        "approve:public-phone": "node backstop.js --approve -p public -v phone",
-        "openReport:public-phone": "node backstop.js --openReport -p public -v phone",
-        "reference:public-tablet": "node backstop.js --reference -p public -v tablet",
-        "test:public-tablet": "node backstop.js --test -p public -v tablet",
-        "approve:public-tablet": "node backstop.js --approve -p public -v tablet",
-        "openReport:public-tablet": "node backstop.js --openReport -p public -v tablet"
+        "reference:web-desktop": "node backstop.js --reference -p web -v desktop",
+        "test:web-desktop": "node backstop.js --test -p web -v desktop",
+        "approve:web-desktop": "node backstop.js --approve -p web -v desktop",
+        "openReport:web-desktop": "node backstop.js --openReport -p web -v desktop",
+        "reference:web-phone": "node backstop.js --reference -p web -v phone",
+        "test:web-phone": "node backstop.js --test -p web -v phone",
+        "approve:web-phone": "node backstop.js --approve -p web -v phone",
+        "openReport:web-phone": "node backstop.js --openReport -p web -v phone",
+        "reference:web-tablet": "node backstop.js --reference -p web -v tablet",
+        "test:web-tablet": "node backstop.js --test -p web -v tablet",
+        "approve:web-tablet": "node backstop.js --approve -p web -v tablet",
+        "openReport:web-tablet": "node backstop.js --openReport -p web -v tablet"
     },
     "dependencies": {
-        "backstopjs": "^3.5.2",
+        "backstopjs": "^3.5.10",
         "yargs": "^12.0.1"
     }
 }

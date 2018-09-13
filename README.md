@@ -8,16 +8,16 @@ Automated Visual Regression Test utilising BackstopJS
 ```sh
 npm install
 
-npm run reference:public-desktop
-npm run test:public-desktop
-npm run approve:public-desktop
+npm run reference:web-desktop
+npm run test:web-desktop
+npm run approve:web-desktop
 
-npm run reference:public-phone
-npm run test:public-phone
-npm run approve:public-phone
+npm run reference:web-phone
+npm run test:web-phone
+npm run approve:web-phone
 
-npm run reference:public-tablet
-npm run test:public-tablet
-npm run approve:public-tablet
+npm run reference:web-tablet
+npm run test:web-tablet
+npm run approve:web-tablet
 
 ```
