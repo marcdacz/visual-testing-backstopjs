@@ -15,7 +15,10 @@
         "reference:web-tablet": "node backstop.js --reference -p web -v tablet",
         "test:web-tablet": "node backstop.js --test -p web -v tablet",
         "approve:web-tablet": "node backstop.js --approve -p web -v tablet",
-        "openReport:web-tablet": "node backstop.js --openReport -p web -v tablet"
+        "openReport:web-tablet": "node backstop.js --openReport -p web -v tablet",
+        "downloadRefPics": "node ./scripts/syncRefPics.js --downloadRefPics",
+        "forceDownloadRefPics": "node ./scripts/syncRefPics.js --forceDownloadRefPics",
+        "uploadRefPics": "node ./scripts/syncRefPics.js --uploadRefPics"
     },
     "dependencies": {
         "backstopjs": "^3.5.10",
